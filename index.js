@@ -24,7 +24,7 @@ function displayProxQuestao()
 {
     resetar()
 
-    if(questoes.lenght == questaoIndex)
+    if(questoes.lenght === questaoIndex)
     {
         return fimJogo()
     }
@@ -151,7 +151,7 @@ const questoes = [
 },
 
 {
-    questao: "Qual foi a ultima seleção a consagrar campeã Mundial?",
+    questao: "Qual foi a ultima seleção a se consagrar campeã Mundial?",
     resp:
     [
         { text: "Holanda", correto: false},
@@ -170,5 +170,5 @@ const questoes = [
         { text: "17 de julho de 1994", correto: true},
         { text: "10 de Junho de 1934", correto: false}
     ]
-}
+},
 ]
