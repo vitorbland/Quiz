@@ -24,7 +24,7 @@ function displayProxQuestao()
 {
     resetar()
 
-    if(questoes.lenght === questaoIndex)
+    if(questoes.lenght == questaoIndex)
     {
         return fimJogo()
     }
