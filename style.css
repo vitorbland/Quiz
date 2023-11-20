@@ -1,0 +1,115 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button
+{
+    cursor: pointer;
+}
+
+body
+{
+    background-color: rgb(102, 98, 98);
+    color: aliceblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container
+{
+    background-color: rgb(102, 98, 98);
+    width: 90%;
+    max-width: 800px;
+    border: 2px solid aliceblue;
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.questoes-container
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.questao
+{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.resp-container
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.prox-questao
+{
+    margin-top: 32px;
+}
+
+.button
+{
+    background-color: black;
+    border-color: white;
+    border-radius: 6px;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: bold;
+    height: 48px;
+    padding: 0 32px;
+    transition: filter 0.2s;
+}
+
+.button:not(:disabled):hover
+{
+    filter: brightness(0.5);
+}
+
+.resp:disabled
+{
+    cursor: not-allowed;
+}
+
+.hide
+{
+    display: none;
+}
+
+.correto
+{
+    background-color: rgb(33, 214, 51);
+}
+
+.incorreto
+{
+    background-color: rgb(233, 27, 27);
+}
+
+.mensagem-final
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+.mensagem-final span
+{
+    display: block;
+    margin-top: 8px;
+} 
